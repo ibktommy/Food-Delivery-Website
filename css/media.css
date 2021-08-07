@@ -1,0 +1,231 @@
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1100px) {
+	html {
+		font: 55%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.header__top {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.header__top .logo {
+		margin-bottom: .5rem;
+	}
+
+	nav ul {
+		align-items: center;
+	}
+
+	.phone {
+		margin-top: .5rem;
+	}
+
+	.phone:before {
+		display: none;
+	}
+
+	/* HEADER TOP */
+	.header__bottom {
+		height: 85vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/header.jpg') no-repeat center center/cover;
+		position: relative;
+	}
+
+	.header__bottom-right {
+		display: none;
+	}
+
+	.header__bottom-left {
+		background: none;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		/* border: 1px solid #fff; */
+		width: 100%;
+	}
+
+	.header__bottom-text h1 {
+		font-size: 4.5rem;
+	}
+
+	/* MENU */
+	.menu__container {
+		width: 95%;
+		padding: 0 1.5rem;
+	}
+
+	.menu__box {
+		padding: 1rem 0;
+	}
+
+	.menu__img {
+		height: 20rem;
+	}
+
+	.menu__order {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu__price {
+		margin-bottom: .5rem;
+	}
+
+	/* SECTION OFFERS */
+	.offers__container {
+		max-width: 95%;
+		padding: 0 1rem;
+	}
+
+	/* SECTION ADVERT */
+	.advert__container {
+		max-width: 95%;
+		padding: 0 1rem;
+	}
+
+	/* SECTION REVIEWS */
+	.review__container {
+		width: 95%;
+		padding: 0 1rem;
+	}
+
+	/* FOOTER */
+	.footer__container {
+		max-width: 95%;
+	}
+
+	.footer__top {
+		display: none;
+	}
+
+	.footer__bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* SMARTPHONES */
+@media only screen and (max-width: 800px) {
+	.title {
+		font-size: 2rem;
+	}
+
+	.header__bottom-text h1 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.header__bottom-text p {
+		font-size: 1.3rem;
+	}
+
+	/* MENU */
+	.menu__container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.menu__box {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	.menu__img {
+		height: 30rem;
+	}
+
+	/* PROMOTION */
+	.offers__container {
+		max-width: 95%;
+	}
+	.shortBox__top,
+	.shortBox__bottom {
+		display: none;
+	}
+
+	.longBox__top,
+	.longBox__bottom {
+		flex: 0 0 100%;
+	}
+
+	.longBox__bottom {
+		height: 15rem;
+	}
+
+	/* SECTION ADVERT */
+	.advert__container {
+		max-width: 95%;
+	}
+
+	.advert__wrap {
+		display: flex;
+		flex-direction: column;
+		/* width: 90%; */
+	}
+
+	/* REVIEWS */
+	.review__container {
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.review__box {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.review__form {
+		width: 80%;
+	}
+
+	form input,
+	form textarea {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header__bottom-text h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.header__bottom-text p {
+		font-size: 1rem;
+	}
+	nav ul {
+		flex-direction: column;
+		margin-top: 1rem;
+	}
+
+	nav ul li {
+		margin: .5rem 0;
+	}
+
+	.phone {
+		margin: 1rem 0;
+	}
+
+	.longBox__right,
+	.longBox__pics {
+		display: none;
+	}
+
+	.longBox__left,
+	.longBox__text {
+		flex-basis: 100%;
+	}
+}
